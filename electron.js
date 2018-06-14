@@ -3,7 +3,7 @@ const {autoUpdater} = require("electron-updater");
 let win; // this wills store the window object
 
 function createDefaultWindow() {
-    win = new BrowserWindow({width: 900, height: 680});
+    win = new BrowserWindow({width: 800, height: 400});
     win.loadURL(`file://${__dirname}/index.html`);
     win.on('closed', () => app.quit());
   return win;
