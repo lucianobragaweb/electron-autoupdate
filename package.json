@@ -1,18 +1,18 @@
 {
-    "name": "electronautoupdate",
-    "version": "0.1.10",
+    "name": "electron-autoupdate",
+    "version": "0.1.15",
     "author": "lucianobragaweb",
     "homepage": "./",
     "description": "An example of an autoupdating electron app",
     "repository": "https://github.com/lucianobragaweb/electron-autoupdate",
     "main": "electron.js",
     "dependencies": {
-        "electron-updater": "^2.10.1"
+        "electron-updater": "^2.18.2"
     },
     "scripts": {
         "start": "electron .",
-        "build": "build --win",
-        "ship": "build --win -p always"
+        "build": "build --win --ia32 --x64",
+        "ship": "build --win --ia32 --x64 -p always"
     },
     "devDependencies": {
         "electron": "^1.7.5",
